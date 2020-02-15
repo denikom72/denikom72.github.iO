@@ -1,0 +1,72 @@
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+ 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+body {
+	padding: 5px; margin:0;
+	font-family:sans-serif, arial;
+	font-size: 15px;
+}
+
+#container{
+
+	margin: 5px;
+	//display:grid;
+	//grid-template-columns: minmax( 600px, 700px );
+
+
+}
+
+#header{
+
+	text-align:center;
+	min-width: 600px;
+	max-width: 1000px;
+	padding:15px;
+	font-weight: bold;
+
+
+}
+
+#content{
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax( 300px, 500px ) );
+}
+
+#left, #right {
+	overflow-y:scroll;
+	height: 400px;
+	border: 1px solid grey;
+	padding: 35px;
+	padding-left: 40px;
+	border-radius: 0% 0% 0% 0%;
+	border-bottom: 0px;
+}
+
+#left { border-radius: 10% 0% 0% 0%; }
+
+#right{ 
+		border-radius: 0% 10% 0% 0%; 
+		direction:rtl;
+}
+
+#right>div {
+	direction: ltr;
+}
