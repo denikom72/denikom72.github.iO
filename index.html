@@ -5,18 +5,21 @@
 <div id="container">
 
 <div id="header">
-	Denis Komnenovic - Computer Scientist, Software-Engineer,<br> Linux-Geek &  Problem-Solver( ask my two school-kidds )
+	Denis Komnenovic - Computer Scientist, Software-Engineer,<br> Linux-Geek &  Problem-Solver( ask my two school-kidds )<br><a href="mailto:denikom72@gmail.com?subject=gitpage%20message" target='_top'>Contact: denikom72@gmail.com</a>
 </div>
 
 <div id="content">
 
 	<div id="left">
 	
+			<h3>IT-Skills<div style='font-size: 16px; font-weight: normal;'>This it-expirience-list was growing with the years and really different projects and it still grows.</div></h3> 
 
 	</div>
 
 	<div id="right">
 
+			<h3 style="direction: ltr;">Reverse Project-List<div style='font-size: 16px; font-weight: normal;'>Mostly larger projects are listed, i didn't set simple one on this list, like modules for cms's, shops, refactorings, ....</div></h3> 
+			 
 
 	</div>
 
@@ -96,7 +99,7 @@
 			 "I'm a proficient Backend-Programmer with Front-End programming skills and Web-Administration expirience on Linux( Debian, Centos ). I've worked on some unusual projects like <u>programming a programming language</u> or an erp-framework. At least i've worked with different programming languages and frameworks on different projects ( web-applications from the scratch, modules for cms- or shop-systems, android apps )." 
 		],
 		[	"<b>Python, Java, Javascript, Sql(Queries, Crud), Regex</b>", 
-			"My first programming languages were C and Perl, heavy to learn, but probably the most powerful one. That's now really some time ago and at least i'm programming for years now in <ul><li>python ( Flat, Django )</li><li>php7( Symfony )</li><li>Regular Expressions</li><li>mysql( complex queries and crud-ops  )</li><li>postgres</li><li>javascript(vanilla, vue), html, css</li><li>java( sdk for android apps, gwt, jsp )</li></ul>	 "
+			"My first programming languages were C and perl, heavy to learn, but really powerful languages. That's some time ago and for the last few years i was coding my stuff in languages like <ul><li>python ( Flat, Django )</li><li>java( sdk for android apps, gwt, jsp )</li><li>php7( Symfony )</li><li>Regular Expressions</li><li>mysql( complex queries and crud-ops  )</li><li>postgres</li><li>javascript(vanilla, vue), html, css</li></ul>	 "
 		],
                 [
 			"<b>Design-Patterns, Frameworks, Tests(Unit, Selenium)</b>", 
@@ -125,11 +128,6 @@
 	*/
 	
 	var dt = [
-		[ 
-			"<h3>Reverse Project-List<div style='font-size: 16px; font-weight: normal;'>Just larger projects are listed where i've developed everything from the scratch ( database, queries, back-end, front-end ). Simple projects like modules for cms's, shop-systems, ... aren't listed.</div></h3>", 
-			"" 
-		],
-		
 		[
 			"<b>2019: Android-App : Mobile-User-Interface<div>for the Timetracker-Web-Application</div></b>",
 			"Java-Sdk"
@@ -148,10 +146,6 @@
 		[ 
 			"<b> 2017-2018: Tiny-Framework<div>( python, mysql, javascript ) for rolebased web-applications( specification, full-stack-programming, unit-tests, selenium )</div></b>", 
 			"Python, Mysql, Javascript, Wsgi  - Tiny-Framework for developing or prototyping of rolebased webapplications. It has some standard web-framework-functionalities like a http-routing-wsgi-modul, Service- and Controler-Factories and so on, but also a role-based-access-controler-module which check the role of the logged in user and the triggered functionalities, if the user has rights for using certain functionalities. The core-part is a configurator, the app-manager where you can select all programmed functionalities and add to created roles and more.<br><a href='www.youtube.com/watch?v=M8KhlKlQID4&feature=youtu.be'>Demo-Video</a><br><a href='https://github.com/denikom72/pyrole-framework'>source-code on github</a>" 
-		],
-		[ 
-			"<br><h3>Curriculum Vitae</h3>", 
-			"It's not finished yet" 
 		]
 
 	].map( function(v){
@@ -162,9 +156,11 @@
 
 	genHtmFrag( dt, "div", "right" );
 
+	/*	
+	genHtmFrag( [ "Curriculum Vitae" ], "h3", "right" );
+	genHtmFrag( ["It's not finished yet"], "div", "right" );	
+	*/
 	//console.log(dt);
-
-
 	var nd = document.getElementsByClassName('topic');
 
 	[].forEach.call( nd, ( v, i ) => {
