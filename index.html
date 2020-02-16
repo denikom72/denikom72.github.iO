@@ -92,18 +92,18 @@
 	*/
 
 	var contLst = [
-		[ 	"<br><b>Web-Full-Stack & Android-App-Programming( native )</b><br><br>", 
+		[ 	"<b>Web-Full-Stack & Native-App-Programming</b>", 
 			 "I'm a proficient Backend-Programmer with Front-End programming skills and Web-Administration expirience on Linux( Debian, Centos ). I've worked on some unusual projects like <u>programming a programming language</u> or a tiny-framework. At least i've worked with different programming languages and frameworks on different projects ( role-based webapps, modules for cms- or shop-systems, android apps )." 
 		],
-		[	"<br/><b>Python, Java, Javascript, complex Sql-Queries, Regex, ....</b><br/><br>", 
+		[	"<b>Python, Java, Javascript, Sql(Queries, Crud), Regex</b>", 
 			"My first programming languages were C and Perl, real heavy to learn, but some of the most powerful one. That's now some time ago and the last few years i'm programming with <ul><li>python ( Flat, Django )</li><li>php7( Symfony )</li><li>Regular Expressions</li><li>mysql( complex queries and crud-ops  )</li><li>postgres</li><li>javascript(vanilla, vue), html, css</li><li>java( sdk for android apps, gwt, jsp )</li></ul>	 "
 		],
                 [
-			"<b>Design-Patterns, Frameworks, Unit-Tests, Selenium, ...</b>", 
-			"<br>Paradigm:<ul><li>OOP</li><li>Functional</li></ul>Design-Patterns:<ul><li> Factory, Decorators, Singleton</li><li>Prototypes, Overload, Interfaces</li><li>Mvc, Netbeans-Convention, ...</li><li> I use always design-patterns, as far as possible<br> Example: the overload-pattern isn't possible with python.</li></ul>Frameworks( Mvc, Orm ), Cms, Shop-Systems, ...<ul><li>Django, Symfony</li><li>Magnolia, Wordpress, openPim</li></ul> I also pay attention to <ul><li>algo-rules</li><li> right data-structures</li><li> iterative tdd-workflow ( first unit-tests, then solutions )</li><li> and front-end-selenium-tests</li></ul>Sometimes, the time is scarces, but even then, i at least code the unit-tests for the business logic."
+			"<b>Design-Patterns, Frameworks, Tests(Unit, Selenium)</b>", 
+			"Paradigm:<ul><li>OOP</li><li>Functional</li></ul>Design-Patterns:<ul><li> Factory, Decorators, Singleton</li><li>Prototypes, Overload, Interfaces</li><li>Mvc, Netbeans-Convention, ...</li><li> I use always design-patterns, as far as possible<br> Example: the overload-pattern isn't possible with python.</li></ul>Frameworks( Mvc, Orm ), Cms, Shop-Systems, ...<ul><li>Django, Symfony</li><li>Magnolia, Wordpress, openPim</li></ul> I also pay attention to <ul><li>algo-rules</li><li> right data-structures</li><li> iterative tdd-workflow ( first unit-tests, then solutions )</li><li> and front-end-selenium-tests</li></ul>Sometimes, the time is scarces, but even then, i at least code the unit-tests for the business logic."
 		],
                 [ 
-			"<br/><b>Code-Managment : Git, Mercury, Vim, Eclipse</b><br><br>", 
+			"<b>Code-Managment : Git, Mercury, Vim, Eclipse</b>", 
 			"Developping<ul><li>eclipse</li><li>vim</li></ul>Versioning <ul><li> Git</li><li> Mercury</li></ul>" 
 		]
 
@@ -131,22 +131,22 @@
 		],
 		
 		[
-			"<br><b>2019: Android-App : Mobile-User-Interface for the Timetracker-Web-Application below</b><br><br>",
+			"<b>2019: Android-App : Mobile-User-Interface<div>for the Timetracker-Web-Application</div></b>",
 			"Java-Sdk"
 		],
 		
 		[
-			"<br><b>2019: User-Company-Configurator</b><br><br>",
+			"<b>2019: User-Company-Configurator</b>",
 			"Python, Mysql, Javascript - Adding or deleting Users to or from other users with higher roles and to or from other companies. Addon for the timetracker-webapplication below."
 		],
 
 		[ 
-			"<br><b> 2018-2019: Timetracker with a Chip-Scanner, multiple companies</b><br><br>", 
+			"<b> 2018-2019: Timetracker with a Chip-Scanner,<div> able to manage many different companies</div></b>", 
 			"Python, Mysql( DB-Design and Queries ), Javascript, Css-Grid, Wsgi - Rolebased Webapplication for timetracking of employees, can be used by one or more companies. Rfid-Scanner for chips can be used for a login in the web-application too, not just for the ingoing- and outgoing-time-registration. The Superuser can use many time-functionalities, managing absences, making employee-schedules, ... <br><a href='www.youtube.com/watch?v=-nqST_0YpGA&feature=youtu.be'>Demo-Video</a>" 
 		],
 
 		[ 
-			"<br><b> 2017-2018: Tiny-Framework for developing of rolebased web-applications( my responsibility - specification and programming the whole stack, unit-tests, selenium )</b><br><br>", 
+			"<b> 2017-2018: Tiny-Framework<div>( python, mysql, javascript ) for rolebased web-applications( specification, full-stack-programming, unit-tests, selenium )</div></b>", 
 			"Python, Mysql, Javascript, Wsgi  - Tiny-Framework for developing or prototyping of rolebased webapplications. It has some standard web-framework-functionalities like a http-routing-wsgi-modul, Service- and Controler-Factories and so on, but also a role-based-access-controler-module which check the role of the logged in user and the triggered functionalities, if the user has rights for using certain functionalities. The core-part is a configurator, the app-manager where you can select all programmed functionalities and add to created roles and more.<br><a href='www.youtube.com/watch?v=M8KhlKlQID4&feature=youtu.be'>Demo-Video</a><br><a href='https://github.com/denikom72/pyrole-framework'>source-code on github</a>" 
 		],
 		[ 
@@ -164,5 +164,16 @@
 
 	//console.log(dt);
 
+
+	var nd = document.getElementsByClassName('topic');
+
+	[].forEach.call( nd, ( v, i ) => {
+		v.addEventListener( 'click', (e) => {
+			//alert(v);console.log(v);
+			[].forEach.call( document.getElementsByClassName(v.className), (val, ind) => val.className = val.className.replace(/\bclicked\b/gi, "") );
+			v.className += " " + "clicked";
+		});
+		console.log("lllll " + v);
+	} );
 
 </script>

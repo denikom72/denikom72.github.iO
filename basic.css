@@ -70,3 +70,40 @@ body {
 #right>div {
 	direction: ltr;
 }
+
+.topic {
+	border-top: 2px solid #b9b2aa;
+	padding: 10px 21px 3 0;
+	background:#f9ecda;
+	min-height: 40px;
+	margin-bottom: 0px;
+}
+
+.topic ~ div, .topic ~ div > * {
+
+	height: 0px;
+	opacity:0;
+	transition: 2s;
+}
+
+.topic.clicked {
+	padding-top, padding-bottom: 15px;
+}
+
+.topic.clicked ~ div, .topic.clicked ~ div > *{
+
+	//display: block;
+	height: fit-content;opacity:0.99;padding-top: 20px;padding-bottom: 20px;}
+
+.topic div {
+	padding-left: 20px;
+}
+
+.topic:before{
+	font-size: 23px;
+	content:" + ";
+	position:relative;
+	left: 400;
+	
+	
+}
