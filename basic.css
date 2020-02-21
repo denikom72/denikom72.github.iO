@@ -20,9 +20,10 @@
 
 
 body {
-	padding: 5px; margin:0;
-	font-family:sans-serif, arial;
-	font-size: 15px;
+	padding: 5px;
+	margin:0;
+	font-family: monospace;
+	font-size: 13px;
 }
 
 #container{
@@ -74,7 +75,7 @@ body {
 .topic {
 	border-top: 2px solid #b9b2aa;
 	padding: 10px 21px 3 0;
-	background:#f9ecda;
+	/* background:#f9ecda; */
 	min-height: 40px;
 	margin-bottom: 0px;
 }
